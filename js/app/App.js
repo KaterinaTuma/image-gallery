@@ -1,5 +1,6 @@
 import { Header } from '../widgets/index.js';
 import { QueryPanel } from '../widgets/index.js';
+import { Gallery } from '../widgets/index.js';
 import { Footer } from '../widgets/index.js';
 
 /**
