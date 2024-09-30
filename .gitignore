@@ -1,0 +1,7 @@
+/node_modules
+/_temp
+
+.editorconfig
+.eslintrc.json
+package-lock.json
+tsconfig.json
