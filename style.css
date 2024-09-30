@@ -45,3 +45,71 @@ select {
 button {
   cursor: pointer;
 }
+
+
+/* fonts */
+@font-face {
+  font-family: "SFPro";
+  src: url("./assets/fonts/SFPro/SFPro-Regular.woff2") format("woff2");
+  src: url("./assets/fonts/SFPro/SFPro-Regular.woff") format("woff");
+  src: url("./assets/fonts/SFPro/SFPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SFPro";
+  src: url("./assets/fonts/SFPro/SFPro-Bold.woff2") format("woff2");
+  src: url("./assets/fonts/SFPro/SFPro-Bold.woff") format("woff");
+  src: url("./assets/fonts/SFPro/SFPro-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* theme-vars */
+.root.light {
+  --color-primary: #575757;
+  --color-secondary: #bcbcbc;
+  --color-highlight: #4361ee;
+
+  --bg-color-primary: #e9f2f9;
+  --bg-color-header: #d7e2ec;
+  --bg-color-button: #e3edf6;
+  --bg-color-input: #ffffff;
+  --bg-color-footer: #d7e2ec;
+
+  --border-color: #aaaaaa;
+
+  --shadow-color-dark: #c6d5e4;
+  --shadow-color-light: #ffffff;
+}
+
+.root.dark {
+  --color-primary: #ffffff;
+  --color-secondary: #777a7c;
+  --color-highlight: #4361ee;
+
+  --bg-color-primary: #1D2226;
+  --bg-color-header: #31373e;
+  --bg-color-button: #1d2226;
+  --bg-color-input: #1d2226;
+  --bg-color-footer: #31373e;
+
+  --border-color: #ffffff;
+
+  --shadow-color-dark: #000000;
+  --shadow-color-light: #575757;
+}
+
+/* global */
+body {
+  font-family: "SFPro", sans-serif;
+  font-size: 16px;
+}
+
+.root {
+  color: var(--color-primary);
+  background-color: var(--bg-color-primary);
+}
