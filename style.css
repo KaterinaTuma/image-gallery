@@ -113,3 +113,143 @@ body {
   color: var(--color-primary);
   background-color: var(--bg-color-primary);
 }
+
+/* app */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__wrapper,
+.panel__wrapper,
+.gallery__wrapper {
+  margin: 0 auto;
+  padding: 24px;
+  max-width: 1280px;
+}
+
+/* header */
+.header {
+  border-bottom: 1px solid var(--border-color);
+  background: var(--bg-color-header);
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  gap: 12px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.logo svg {
+  width: 32px;
+  height: 32px;
+  fill: var(--color-primary);
+}
+
+.logo:hover {
+  color: var(--color-highlight);
+}
+
+.logo:hover svg {
+  fill: var(--color-highlight);
+}
+
+.search {
+  flex: 0 0 70%;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search__input {
+  padding-left: 3.4rem;
+  margin-left: -2.5rem;
+  margin-right: -2.5rem;
+  width: 90%;
+  height: 100%;
+  font: inherit;
+  background: var(--bg-color-input);
+  border-radius: 50px;
+  box-shadow: 1px 3px 12px var(--bg-color-primary);
+  transition: all 0.3s;
+}
+
+.search__input:focus {
+  outline: none;
+  width: 100%;
+  color: var(--color-primary);
+}
+
+.search__input::placeholder {
+  font-size: 18px;
+}
+
+.search__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.search__button:active {
+  transform: translateY(2px);
+}
+
+.search__button svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--color-secondary);
+}
+
+.search__button .icon__search {
+  width: 24px;
+  height: 24px;
+}
+
+.search__close {
+  display: none;
+}
+
+.search__close.active {
+  display: flex;
+}
+
+/* theme */
+.button {
+  display: grid;
+  place-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--bg-color-button);
+  box-shadow: 1px 3px 5px var(--shadow-color-dark),
+  -3px -2px 5px var(--shadow-color-light);
+  stroke: var(--color-primary);
+  fill: var(--color-primary);
+}
+
+.button--theme {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-content: center;
+}
+
+.button--theme svg {
+  fill: var(--color-primary);
+  width: 20px;
+  height: 20px;
+}
+
+.button:hover svg {
+  stroke: var(--color-highlight);
+  fill: var(--color-highlight);
+}
